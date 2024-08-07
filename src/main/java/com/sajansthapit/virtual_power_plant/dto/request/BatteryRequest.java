@@ -1,0 +1,1 @@
+package com.sajansthapit.virtual_power_plant.dto.request;import com.sajansthapit.virtual_power_plant.dto.BatteryDto;import java.util.List;public record BatteryRequest(        List<BatteryDto> batteries) {}

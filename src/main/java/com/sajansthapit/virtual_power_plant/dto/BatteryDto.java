@@ -1,0 +1,1 @@
+package com.sajansthapit.virtual_power_plant.dto;public record BatteryDto(        String name,        String postCode,        int wattCapacity) {}
