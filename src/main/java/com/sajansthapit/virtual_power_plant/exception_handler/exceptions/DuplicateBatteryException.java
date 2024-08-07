@@ -1,0 +1,1 @@
+package com.sajansthapit.virtual_power_plant.exception_handler.exceptions;public class DuplicateBatteryException extends RuntimeException{    public DuplicateBatteryException() {        super();    }    public DuplicateBatteryException(String message) {        super(message);    }}
