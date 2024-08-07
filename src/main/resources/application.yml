@@ -10,6 +10,9 @@ spring:
     password: postgres
   jpa:
     hibernate:
+      jdbc:
+        batch_size: 25
+      order_inserts: true
       ddl-auto: update
     properties:
       hibernate:
