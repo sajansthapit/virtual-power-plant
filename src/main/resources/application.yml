@@ -1,1 +1,17 @@
-spring.application.name=virtual-power-plant
+server:
+  port: 8090
+
+spring:
+  application:
+    name: virtual-power-plant
+  datasource:
+    url: jdbc:postgresql://localhost:5432/power_plant_db
+    username: postgres
+    password: postgres
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+      show-sql: true
