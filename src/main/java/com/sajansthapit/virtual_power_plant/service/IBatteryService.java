@@ -1,0 +1,1 @@
+package com.sajansthapit.virtual_power_plant.service;public interface IBatteryService {}
