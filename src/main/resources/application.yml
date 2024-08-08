@@ -5,7 +5,7 @@ spring:
   application:
     name: virtual-power-plant
   datasource:
-    url: jdbc:postgresql://localhost:5432/power_plant_db
+    url: jdbc:postgresql://postgres/power_plant_db
     username: postgres
     password: postgres
   jpa:
