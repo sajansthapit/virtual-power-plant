@@ -91,9 +91,8 @@ public class BatteryControllerTest {
                 .thenReturn(batteryFilterResponse);
 
         mockMvc.perform(
-                MockMvcRequestBuilders.post("/api/battery/filter")
+                MockMvcRequestBuilders.get("/api/battery/filter?postCodeFrom=10000&postCodeTo=10005")
                         .contentType(MediaType.APPLICATION_JSON)
-                        .content(objectMapper.writeValueAsString(batteryFilterRequest))
         ).andExpect(status().isFound());
 
         verify(batteryService, Mockito.times(1)).filter(batteryFilterRequest);
